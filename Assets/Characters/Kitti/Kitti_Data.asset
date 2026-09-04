@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 683c16416068e16409b48e5d775fcee1, type: 3}
+  m_Name: Kitti_Data
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterData
+  id: cat_ranger
+  characterName: "\u041A\u0438\u0442\u0442\u0438"
+  icon: {fileID: 1622721746406278710, guid: 8f6387cebaf05fa4ebe17b7b0a6a6790, type: 3}
+  portrait: {fileID: 1622721746406278710, guid: 8f6387cebaf05fa4ebe17b7b0a6a6790, type: 3}
+  rarity: {fileID: 11400000, guid: 6d2cfd9a570cbdf469004ee1f0705c0e, type: 2}

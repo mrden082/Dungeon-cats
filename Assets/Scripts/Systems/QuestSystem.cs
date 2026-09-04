@@ -1,0 +1,54 @@
+using UnityEngine;
+
+public class QuestSystem : MonoBehaviour
+{
+    // Создаём синглтон для системы квестов
+    public static QuestSystem Instance { get; private set; }
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+
+        Debug.Log("[QuestSystem] QuestSystem создан.");
+    }
+
+    // Получает все квесты, существующие в игре
+    public QuestData[] GetAllQuests()
+    {
+        QuestData[] quests = GameData.Instance.Quests;
+
+        Debug.Log(
+            $"[QuestSystem] Получено квестов из GameData: {quests.Length}"
+        );
+
+        foreach (QuestData quest in quests)
+        {
+            Debug.Log(
+                $"[QuestSystem] Квест:({quest.id})"
+            );
+        }
+
+        return quests;
+    }
+
+    // Проверяет, выполнен ли конкретный квест у игрока
+    public bool IsQuestCompleted(string questId)
+    {
+        bool completed = GameData.Instance.PlayerData
+            .CompletedQuests
+            .Contains(questId);
+
+        Debug.Log(
+            $"[QuestSystem] Проверка {questId}: {completed}"
+        );
+
+        return completed;
+    }
+}

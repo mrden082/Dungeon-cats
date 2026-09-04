@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 683c16416068e16409b48e5d775fcee1, type: 3}
+  m_Name: Rouge_Data
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterData
+  id: cat_rouge
+  characterName: "\u0412\u043E\u0440\u043E\u0432\u043A\u0430"
+  icon: {fileID: -5477451427799703241, guid: 2efd74e79955ff742a3f6309db67d612, type: 3}
+  portrait: {fileID: -5477451427799703241, guid: 2efd74e79955ff742a3f6309db67d612, type: 3}
+  rarity: {fileID: 11400000, guid: 0bf81e8db21c0b34682f8da618e21318, type: 2}
